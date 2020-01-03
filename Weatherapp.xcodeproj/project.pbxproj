@@ -15,6 +15,7 @@
 		C53BCFD123BEEE59008E2094 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C53BCFCF23BEEE59008E2094 /* LaunchScreen.storyboard */; };
 		C53BCFDA23BEEEB0008E2094 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BCFD923BEEEB0008E2094 /* WeatherModel.swift */; };
 		C53BCFDD23BEEF61008E2094 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BCFDC23BEEF61008E2094 /* WeatherService.swift */; };
+		C53BCFE023BEF6F4008E2094 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C53BCFDF23BEF6F4008E2094 /* WeatherViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		C53BCFD223BEEE59008E2094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C53BCFD923BEEEB0008E2094 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		C53BCFDC23BEEF61008E2094 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
+		C53BCFDF23BEF6F4008E2094 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		C53BCFC323BEEE52008E2094 /* Weatherapp */ = {
 			isa = PBXGroup;
 			children = (
+				C53BCFDE23BEF6D4008E2094 /* View Models */,
 				C53BCFDB23BEEF4B008E2094 /* Services */,
 				C53BCFD823BEEE93008E2094 /* Models */,
 				C53BCFC423BEEE52008E2094 /* AppDelegate.swift */,
@@ -95,6 +98,14 @@
 				C53BCFDC23BEEF61008E2094 /* WeatherService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		C53BCFDE23BEF6D4008E2094 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				C53BCFDF23BEF6F4008E2094 /* WeatherViewModel.swift */,
+			);
+			path = "View Models";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C53BCFDD23BEEF61008E2094 /* WeatherService.swift in Sources */,
+				C53BCFE023BEF6F4008E2094 /* WeatherViewModel.swift in Sources */,
 				C53BCFC523BEEE52008E2094 /* AppDelegate.swift in Sources */,
 				C53BCFC723BEEE52008E2094 /* SceneDelegate.swift in Sources */,
 				C53BCFDA23BEEEB0008E2094 /* WeatherModel.swift in Sources */,

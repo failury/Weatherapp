@@ -9,8 +9,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var weatherVM: WeatherViewModel
+    
+    init() {
+        self.weatherVM = WeatherViewModel()
+    }
     var body: some View {
-        Text("Hello, World!")
+        VStack(alignment: .center){
+            TextField("Enter the name of the City", text: self.$weatherVM.cityName) {
+                self.weatherVM.search()
+            }.font(.largeTitle)
+                .padding()
+                .fixedSize()
+            Text(self.weatherVM.tempreature)
+        }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
+            .background(Color.blue)
+            .edgesIgnoringSafeArea(.all)
+        
     }
 }
 
