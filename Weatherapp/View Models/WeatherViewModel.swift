@@ -43,7 +43,7 @@ class WeatherViewModel : ObservableObject {
         self.weatherServices.getWeather(city: city) { weather in
             if let weather = weather {
                 
-                self.weather = weather
+                DispatchQueue.main.async{self.weather = weather}
                 
             }
             
